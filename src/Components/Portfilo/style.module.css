@@ -1,0 +1,8 @@
+.imgWidth{
+    width: 40%;
+}
+@media (max-width:600px) {
+    .imgWidth{
+        width: 100%;
+    }
+}
