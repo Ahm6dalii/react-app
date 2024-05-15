@@ -7,6 +7,7 @@ import Layout from './Components/Loyout'
 
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 import './App.css'
+import Notfound from './Components/pageNotFound/Notfound';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
     {path:'/react-app/',element:<Main />},
     {path:'about',element:<About />},
     {path:'port',element:<Portfilo />},
-    {path:'cont',element:<Contact />}
+    {path:'cont',element:<Contact />},
+    {path:'*',element:<Notfound/>}
   ] }
  
 ])
