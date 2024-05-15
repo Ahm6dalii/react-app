@@ -5,12 +5,13 @@ import Contact from './Components/contact/Contact'
 import Main from './Components/home/main'
 import Layout from './Components/Loyout'
 
-import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+import {RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom'
 import './App.css'
 
 
 function App() {
- let router=createBrowserRouter([
+  
+ let router=createHashRouter([
   {path:'',element:<Layout/>, children:[
     {path:'',element:<Main />},
     {path:'about',element:<About />},
